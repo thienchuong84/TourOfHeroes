@@ -19,7 +19,7 @@ export class HeroesComponent implements OnInit {
   // heroes = HEROES;
   heroes: Hero[];
 
-  selectedHero: Hero;
+  // selectedHero: Hero;  // ko còn dùng khi click a tag routerLink
 
   constructor(private heroService: HeroService) { }
 
@@ -28,9 +28,10 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // ko còn dùng khi click a tag routerLink
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
 
   // getHeroes(): void {
   //   this.heroes = this.heroService.getHeroes();
