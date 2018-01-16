@@ -1,9 +1,4 @@
 /* HeroesComponent's private CSS styles */
-.selected {
-  background-color: #CFD8DC !important;
-  color: white;
-}
-
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
@@ -11,13 +6,12 @@
   width: 15em;
 }
 .heroes li {
-  cursor: pointer;
   position: relative;
-  left: 0;
+  cursor: pointer;
   background-color: #EEE;
-  margin: .5em; /* Tạo khoảng cách giửa các thẻ li */
-  padding: .3em 0;  /* Tạo khoảng cách nội dung bên trong thẻ li */
-  height: 1.6em;  /* Tăng chiều cao thẻ li*/
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
   border-radius: 4px;
 }
 
@@ -27,28 +21,53 @@
   left: .1em;
 }
 
-.heroes .text {
+.heroes a {
+  color: #888;
+  text-decoration: none;
   position: relative;
-  top: -3px;
+  display: block;
+  width: 250px;
 }
-.heroes li.selected:hover {
-  background-color: #607d8b !important;
-  color: white;
+
+.heroes a:hover {
+  color:#607D8B;
 }
 
 .heroes .badge {
   display: inline-block;
-  font-size: small; /* cho text trong span nhỏ lại, ở đây là id*/
+  font-size: small;
   color: white;
-  padding: 0.8em 0.7em 0 0.7em; /* top, right, bottom and left, tạo khoảng cách giữa id và name trong thẻ li, với id trong thẻ span */
-  background-color: #607d88;  /* set mau cho the span */
-  /* phủ màu background full với background thẻ li */
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
   line-height: 1em;
   position: relative;
   left: -1px;
   top: -4px;
   height: 1.8em;
-  /* tạo khoảng cách về bên phải từ span id với name*/
+  min-width: 16px;
+  text-align: right;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+
+.button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  position: relative;
+  left: 194px;
+  top: -32px;
+  background-color: gray !important;
+  color: white;
 }
